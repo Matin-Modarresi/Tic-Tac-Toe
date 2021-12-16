@@ -1,0 +1,135 @@
+index_max 4
+1 1
+
+- - - 
+- x - 
+- - - 
+
+
+-1.5            -1.5            -1.5            -1.5            3.5             -1.5            -1.5            -1.5            -1.5            
+nozoli2.0 	nozoli1.5 	nozoli1 	nozoli1.5 	nozoli2.0 	nozoli1.5 	nozoli1 	nozoli1.5 	nozoli2.0 	
+soudi 1 	soudi 1.5 	soudi 2.0 	soudi 1.5 	soudi 2.0 	soudi 1.5 	soudi 2.0 	soudi 1.5 	soudi 1 	
+ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	
+amoodi2.0 	amoodi2.0 	amoodi2.0 	amoodi2.0 	amoodi2.0 	amoodi2.0 	amoodi2.0 	amoodi2.0 	amoodi2.0 	
+x - -           - x -           - - x           - - -           - - -           - - -           - - -           - - -           - - -           
+- - -           - - -           - - -           x - -           - x -           - - x           - - -           - - -           - - -           
+- - -           - - -           - - -           - - -           - - -           - - -           x - -           - x -           - - x           
+
+-4.5            -4.5            -4.5            -4.5            -4.5            -4.5            -4.5            -4.5            
+nozoli-1 	nozoli-1.5 	nozoli-1 	nozoli-1.5 	nozoli-1.5 	nozoli-1 	nozoli-1.5 	nozoli-1 	
+soudi -1 	soudi -1.5 	soudi -1 	soudi -1.5 	soudi -1.5 	soudi -1 	soudi -1.5 	soudi -1 	
+ofoghi-2.0 	ofoghi-2.0 	ofoghi-2.0 	ofoghi-1 	ofoghi-1 	ofoghi-2.0 	ofoghi-2.0 	ofoghi-2.0 	
+amoodi-2.0 	amoodi-1 	amoodi-2.0 	amoodi-2.0 	amoodi-2.0 	amoodi-2.0 	amoodi-1 	amoodi-2.0 	
+o - -           - o -           - - o           - - -           - - -           - - -           - - -           - - -           
+- x -           - x -           - x -           o x -           - x o           - x -           - x -           - x -           
+- - -           - - -           - - -           - - -           - - -           o - -           - o -           - - o           
+
+#####################################################################################################################################################################
+index_max 0
+0 1
+
+o x - 
+- x - 
+- - - 
+
+
+3.0             2.5             3.0             3.0             2.5             3.0             3.0             
+nozoli1.5 	nozoli1 	nozoli1.5 	nozoli1.5 	nozoli1 	nozoli1.5 	nozoli2 	
+soudi 1.5 	soudi 2.5 	soudi 1.5 	soudi 1.5 	soudi 2.5 	soudi 1.5 	soudi 1 	
+ofoghi1.5 	ofoghi1.5 	ofoghi2.5 	ofoghi2.5 	ofoghi2.0 	ofoghi2.0 	ofoghi2.0 	
+amoodi2.5 	amoodi2.0 	amoodi1.5 	amoodi2.0 	amoodi1.5 	amoodi2.5 	amoodi2.0 	
+o x -           o - x           o - -           o - -           o - -           o - -           o - -           
+- x -           - x -           x x -           - x x           - x -           - x -           - x -           
+- - -           - - -           - - -           - - -           x - -           - x -           - - x           
+
+195.6           194.6           195.1           194.1           -4.0            194.6           
+nozoli-1 	nozoli-1.5 	nozoli-1 	nozoli-1 	nozoli-1.5 	nozoli-1 	
+soudi -1 	soudi -1 	soudi -1.5 	soudi -1 	soudi -1.5 	soudi -1 	
+ofoghi-1 	ofoghi-1 	ofoghi-1 	ofoghi-2.0 	ofoghi-2.0 	ofoghi-2.0 	
+amoodi-2.0 	amoodi-2.5 	amoodi-2.0 	amoodi-2.5 	amoodi-1 	amoodi-2.0 	
+o x o           o x -           o x -           o x -           o x -           o x -           
+- x -           o x -           - x o           - x -           - x -           - x -           
+- - -           - - -           - - -           o - -           - o -           - - o           
+
+#####################################################################################################################################################################
+index_max 2
+1 2
+
+o x - 
+- x x 
+- o - 
+
+
+-116.88          7.0             8.5             8.0             6.5             
+nozoli1 	nozoli1 	nozoli2 	nozoli1 	nozoli2 	
+soudi 2.5 	soudi 2 	soudi 1 	soudi 2.5 	soudi 1 	
+ofoghi2 	ofoghi2.5 	ofoghi2.5 	ofoghi1 	ofoghi1 	
+amoodi2.0 	amoodi1.5 	amoodi2.0 	amoodi1.5 	amoodi2.0 	
+o x x           o x -           o x -           o x -           o x -           
+- x -           x x -           - x x           - x -           - x -           
+- o -           - o -           - o -           x o -           - o x           
+
+139.29          1.0             136.29          137.79          
+nozoli-1 	nozoli-2 	nozoli-1 	nozoli-1 	
+soudi -1 	soudi -1 	soudi -1 	soudi -1 	
+ofoghi-1 	ofoghi-1 	ofoghi-2.5 	ofoghi-2.5 	
+amoodi-1 	amoodi-2.5 	amoodi-2.5 	amoodi-1 	
+o x o           o x -           o x -           o x -           
+- x x           o x x           - x x           - x x           
+- o -           - o -           o o -           - o o           
+
+#####################################################################################################################################################################
+index_max 1
+2 0
+
+o x - 
+o x x 
+x o - 
+
+
+-117.38          7.5             -118.88          
+nozoli1 	nozoli1 	nozoli2 	
+soudi 2.5 	soudi 2.5 	soudi 1 	
+ofoghi2 	ofoghi1 	ofoghi1 	
+amoodi2.5 	amoodi1 	amoodi2.5 	
+o x x           o x -           o x -           
+o x x           o x x           o x x           
+- o -           x o -           - o x           
+
+2               106.44          
+nozoli-1 	nozoli-1 	
+soudi -1 	soudi -1 	
+ofoghi-1 	ofoghi-2 	
+amoodi-1 	amoodi-1 	
+o x o           o x -           
+o x x           o x x           
+x o -           x o o           
+
+#####################################################################################################################################################################
+index_max 0
+2 2
+
+o x o 
+o x x 
+x o x 
+
+
+6               
+nozoli2 	
+soudi 1 	
+ofoghi1 	
+amoodi2 	
+o x o           
+o x x           
+x o x           
+
+
+
+
+
+
+
+
+
+
+#####################################################################################################################################################################
