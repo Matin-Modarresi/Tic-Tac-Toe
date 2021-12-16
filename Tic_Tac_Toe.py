@@ -163,30 +163,30 @@ def MAX(self,index=0,row=0,col=0):
 
 
 	if index%2==0:
-		maximum = -1000000
+		maximum = -1000000*state
 		if len(self.leaves)==0:
 			maximum=0
 
 		for i in self.leaves:	
-			if i.value > maximum:
+			if i.value*state > maximum*state:
 				maximum = i.value
 		
 		self.value+=maximum
 	
 	else:
-		minimum = 1000000
+		minimum = 1000000*state
 		if len(self.leaves)==0:
 			minimum=0
 
 		for i in self.leaves:
-			if i.value < minimum:
+			if i.value*state < minimum*state:
 				minimum=i.value
 	
 		self.value+=minimum
 
 
 def stop_condition(self,row,col):
-
+	global state
 	value=0
 	range_  = [
 			   [ [(row,row+3),(col,col+3)]      ,[(row-1,row-3,-1),(col-1,col-3,-1)] ],
@@ -247,13 +247,13 @@ def stop_condition(self,row,col):
 		
 
 		if count>=3:
-			self.status = 1
-			self.value+=1000
+			self.status = 1*state
+			self.value+=1000*state
 			return 1
 
 		if count<=-3:
-			self.status =-1
-			self.value-=1000
+			self.status =-1*state
+			self.value-=1000*state
 			return -1
 
 	self.value=value
@@ -262,7 +262,7 @@ def stop_condition(self,row,col):
 
 
 def conditions(self,row,col,count,check,check_):
-
+	global state
 	
 	
 	if row>=3 or col>=3 or row<=-1 or col<=-1:
@@ -273,9 +273,9 @@ def conditions(self,row,col,count,check,check_):
 		if not check_:
 			check_=True
 		if check=='x':
-			self.value += .5
+			self.value +=.5*state
 		else:
-			self.value-=.5
+			self.value-=.5*state
 
 
 
@@ -285,10 +285,10 @@ def conditions(self,row,col,count,check,check_):
 
 		if check==None or check=='x':
 			if check_:
-				self.value+=1
+				self.value+=1*state
 			else:
-				count+=1
-				self.value+=1
+				count+=1*state
+				self.value+=1*state
 				check='x'
 
 		if check=='o':
@@ -300,10 +300,10 @@ def conditions(self,row,col,count,check,check_):
 
 		if check==None or check=='o':
 			if check_:
-				self.value-=1
+				self.value-=1*state
 			else:
-				count-=1
-				self.value-=1
+				count-=1*state
+				self.value-=1*state
 				check='o'
 
 		if check=='x':
@@ -333,7 +333,8 @@ process = open('Process.txt','w')
 #graph.render('output/tree')
 #print(round(tree.value,2),print(round(tree.leaves[1].value,2)))
 
-change_turn = 0
+change_turn = 1
+state=-1
 while not game_finished:
 	
 	tree=Node(game_board)
