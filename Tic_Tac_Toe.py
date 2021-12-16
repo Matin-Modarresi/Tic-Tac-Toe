@@ -1,6 +1,5 @@
 import copy
 import coordinates as cor
-import graphviz
 import os
 game_board = [['-' for i in range(3)]for j in range(3)]
 
@@ -57,60 +56,7 @@ class Node:
 			print()
 
 
-	def get_information(self):
-		temp=''
-		space = 0
-		state_value = 0
-
-		for i in self.map:
-			for j in i:
-				temp+=j + ' '
-			temp+='\\n'
-
-
-		temp+='\\nsum value: '+ str(round(self.value,2)) 
-		#temp+='\\nstate_value = nozoli + soudi + ofoghi + amoodi'
-
-		for val in self.detail_val:
-			state_value += self.detail_val[val]
-
-		for val in self.detail_val:
-			if val == 'nozoli':
-				temp+='\\n'+f"{str(state_value):<3}"+" ="
-			space = len(val)
-			temp+=f"{str(round(self.detail_val[val],2)):^7}"
-			temp+='+' if val!='amoodi' else ""
 		
-		
-		return temp
-		
-	
-
-	def draw_graph(self,lab=''):
-		if len(lab)==stop_turn:
-			return
-		colors= ['red','blue','green']
-		node_color = colors[len(lab)%3]
-		limit = 0
-		if len(lab)==0:
-			limit = len(self.leaves)
-		else:
-			limit = len(self.leaves)
-
-		if lab=='':
-			graph.node(lab,self.get_information())
-
-		for leave,k in zip(self.leaves[:limit],range(limit)):
-			lab+=str(k)
-			graph.node(lab,leave.get_information(),color = node_color,overlap = 'false',splines = 'true')
-			
-
-			leave.draw_graph(lab)
-			graph.edge(lab[:-1],lab,color = node_color,overlap = 'flase',splines='true')
-			lab=lab[:-1]
-
-
-
 
 def MAX(self,index=0,row=0,col=0):
 	global last_level,stop_turn
@@ -163,30 +109,30 @@ def MAX(self,index=0,row=0,col=0):
 
 
 	if index%2==0:
-		maximum = -1000000*state
+		maximum = -1000000*state_turn
 		if len(self.leaves)==0:
 			maximum=0
 
 		for i in self.leaves:	
-			if i.value*state > maximum*state:
+			if i.value*state_turn > maximum*state_turn:
 				maximum = i.value
 		
 		self.value+=maximum
 	
 	else:
-		minimum = 1000000*state
+		minimum = 1000000*state_turn
 		if len(self.leaves)==0:
 			minimum=0
 
 		for i in self.leaves:
-			if i.value*state < minimum*state:
+			if i.value*state_turn < minimum*state_turn:
 				minimum=i.value
 	
 		self.value+=minimum
 
 
 def stop_condition(self,row,col):
-	global state
+	global state_turn
 	value=0
 	range_  = [
 			   [ [(row,row+3),(col,col+3)]      ,[(row-1,row-3,-1),(col-1,col-3,-1)] ],
@@ -247,13 +193,13 @@ def stop_condition(self,row,col):
 		
 
 		if count>=3:
-			self.status = 1*state
-			self.value+=1000*state
+			self.status = 1
+			self.value+=1000
 			return 1
 
 		if count<=-3:
-			self.status =-1*state
-			self.value-=1000*state
+			self.status =-1
+			self.value-=1000
 			return -1
 
 	self.value=value
@@ -262,7 +208,7 @@ def stop_condition(self,row,col):
 
 
 def conditions(self,row,col,count,check,check_):
-	global state
+	global state_turn
 	
 	
 	if row>=3 or col>=3 or row<=-1 or col<=-1:
@@ -273,9 +219,9 @@ def conditions(self,row,col,count,check,check_):
 		if not check_:
 			check_=True
 		if check=='x':
-			self.value +=.5*state
+			self.value +=.5*state_turn
 		else:
-			self.value-=.5*state
+			self.value-=.5*state_turn
 
 
 
@@ -285,10 +231,10 @@ def conditions(self,row,col,count,check,check_):
 
 		if check==None or check=='x':
 			if check_:
-				self.value+=1*state
+				self.value+=1*state_turn
 			else:
-				count+=1*state
-				self.value+=1*state
+				count+=1*state_turn
+				self.value+=1*state_turn
 				check='x'
 
 		if check=='o':
@@ -300,10 +246,10 @@ def conditions(self,row,col,count,check,check_):
 
 		if check==None or check=='o':
 			if check_:
-				self.value-=1*state
+				self.value-=1*state_turn
 			else:
-				count-=1*state
-				self.value-=1*state
+				count-=1*state_turn
+				self.value-=1*state_turn
 				check='o'
 
 		if check=='x':
@@ -325,34 +271,23 @@ game_finished = False
 
 process = open('Process.txt','w')
 
-#tree = Node(game_board)
-#MAX(tree,turn)
-#graph = graphviz.Digraph(comment='The Round Table',node_attr={'shape':'square'},format = 'pdf')
-#tree.draw_graph()
-#graph.view()
-#graph.render('output/tree')
-#print(round(tree.value,2),print(round(tree.leaves[1].value,2)))
 
-change_turn = 1
-state=-1
+
+state_turn=-1
+state_difficulty = -1
+	
+
 while not game_finished:
 	
 	tree=Node(game_board)
 	MAX(tree,turn)
 
 
-
-	#for shift in range(turn,stop_turn):
-
-
-
-	if change_turn%2==0:	
-		maximum=-1000000
+	if turn%2==1:	
+		maximum=-1000000*state_difficulty
 		
 		for i,index in zip(tree.leaves,range(len(tree.leaves))):
-			if i==None:
-				continue
-			if i.value>maximum:
+			if i.value*state_difficulty>maximum*state_difficulty:
 				maximum=i.value
 				index_max=index
 			
@@ -426,5 +361,5 @@ while not game_finished:
 
 	game_board=copy.deepcopy(tree.map)
 	turn+=1
-	change_turn+=1
+
 	stop_turn=6+turn
