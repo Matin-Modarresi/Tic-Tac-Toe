@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="coordinates.py" />
+    <Compile Include="PyGame.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Tic_Tac_Toe.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
