@@ -5,18 +5,36 @@ import PyGame as pg
 import sys
 game_board = [['-' for i in range(3)]for j in range(3)]
 
+clock=pg.pygame.time.Clock()
 
-
+state_turn=1
+state_difficulty = 1
 print(pg.windowSize)
 print(pg.space)
 print(pg.cell_hor)
 print(pg.cell_ver)
-window = pg.pygame.display.set_mode(*pg.windowSize)
+window = pg.pygame.display.set_mode((500,500))
 
-pg.game_board(window,0,1,-1)
-pg.pygame.display.update()
+print(pg.len_rect,pg.width_rect)
+while True:
+	pg.game_board(window,0,0,-1)	
+	
+	b=pg.click_on_difficulty(window,100,300,state_difficulty,state_turn)
+	if b!=None:
+		state_difficulty=b[0]
+		state_turn = b[1]
+		print(b)
 
+	
 
+	
+
+	for event in pg.GAME_EVENTS.get():
+		if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
+			pg.pygame.quit()
+			sys.exit()
+	#clock.tick(30)
+	pg.pygame.display.update()
 
 
 
@@ -284,7 +302,7 @@ turn = 0
 stop_turn=5
 stop=0
 
-game_finished = False
+game_finished = True
 
 
 
@@ -292,9 +310,8 @@ process = open('Process.txt','w')
 
 
 
-state_turn=-1
 change_turn = 0 if state_turn is 1 else 1
-state_difficulty = 1
+
 	
 
 while not game_finished:

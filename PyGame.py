@@ -1,8 +1,11 @@
 import pygame,sys
 import pygame.locals as GAME_GLOBALS
 import pygame.event as GAME_EVENTS
+import time
+#import Tic_Tac_Toe as tic
 
 pygame.init()
+clock=pygame.time.Clock()
 windowSize = pygame.display.get_desktop_sizes()
 #windowSize = [(800,800)]
 length = 500
@@ -46,7 +49,7 @@ def game_board(win,row,col,shape):
 
 
 def click_on_cell(win):
-	pass
+	
 	for i in range(3):#cell_hor
 		for j in range(3):#cell_ver
 			if cell_hor[i] < pygame.mouse.get_pos()[1] < cell_hor[i+1] and cell_ver[j] <pygame.mouse.get_pos()[0]< cell_ver[j+1] and pygame.mouse.get_pressed()[0]:
@@ -57,8 +60,67 @@ def click_on_cell(win):
 					return i , j
 
 	
+
+
+len_rect = 105
+width_rect = 45
+
+def click_on_difficulty(win,x,y,state_diff,state_turn):
+
+	basicFont = pygame.font.SysFont("Times New Roman", 40)
 	
+	if state_diff==1:
+		text_diff = basicFont.render('Hard', True,(255,0,0))
+	else:
+		text_diff = basicFont.render('Easy', True,(255,0,0))
 
 
+	if state_turn==1:
+		text_turn = basicFont.render('Turn 2', True,(255,0,0))
+	else:
+		text_turn = basicFont.render('Turn 1', True,(255,0,0))
 
-	
+
+	button_diff = pygame.draw.rect(win,(255,255,255),(x,y,len_rect,width_rect),border_radius=5)
+	button_turn = pygame.draw.rect(win,(255,255,255),(x,y+100,len_rect,width_rect),border_radius=5)
+	win.blit(text_diff,(x,y))	
+	win.blit(text_turn,(x,y+100))
+	pygame.display.update()
+	for event in pygame.event.get():
+		if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+			pygame.quit()
+			sys.exit()
+		if event.type == pygame.MOUSEBUTTONDOWN:
+			mouse_pos = event.pos  # gets mouse position
+
+			if button_diff.collidepoint(mouse_pos):
+				#print(-state_diff)
+				state_diff=-state_diff
+				return state_diff,state_turn
+
+			if button_turn.collidepoint(mouse_pos):
+				#print(-state_turn)
+				state_turn=-state_turn
+				return state_diff,state_turn
+
+def click_on_turn(win,x,y,state):
+	basicFont = pygame.font.SysFont("Times New Roman", 40)
+	if state==1:
+		text = basicFont.render('Turn 2', True,(255,0,0))
+	else:
+		text = basicFont.render('Turn 1', True,(255,0,0))
+
+
+	button = pygame.draw.rect(win,(255,255,255),(x,y,len_rect,width_rect),border_radius=5)
+	win.blit(text,(x,y))	
+	pygame.display.update()
+	for event in pygame.event.get():
+		if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+			pygame.quit()
+			sys.exit()
+		if event.type == pygame.MOUSEBUTTONDOWN:
+			mouse_pos = event.pos  # gets mouse position
+
+			if button.collidepoint(mouse_pos):
+				print(-state)
+				return -state
