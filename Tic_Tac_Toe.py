@@ -3,41 +3,22 @@ import coordinates as cor
 import os
 import PyGame as pg
 import sys
-game_board = [['-' for i in range(3)]for j in range(3)]
-
-clock=pg.pygame.time.Clock()
-
-state_turn=1
-state_difficulty = 1
-print(pg.windowSize)
-print(pg.space)
-print(pg.cell_hor)
-print(pg.cell_ver)
-window = pg.pygame.display.set_mode((500,500))
-
-print(pg.len_rect,pg.width_rect)
-while True:
-	pg.game_board(window,0,0,-1)	
-	
-	b=pg.click_on_difficulty(window,100,300,state_difficulty,state_turn)
-	if b!=None:
-		state_difficulty=b[0]
-		state_turn = b[1]
-		print(b)
-
-	
-
-	
-
-	for event in pg.GAME_EVENTS.get():
-		if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
-			pg.pygame.quit()
-			sys.exit()
-	#clock.tick(30)
-	pg.pygame.display.update()
 
 
-
+#while 1:
+#	pg.game_board(window,0,0,-1)	
+#	pg.show_result(window,'  draw  ',(0,255,255))
+#
+#	
+#
+#	
+#
+#	for event in pg.GAME_EVENTS.get():
+#		if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
+#			pg.pygame.quit()
+#			sys.exit()
+#	
+#	pg.pygame.display.update()
 
 
 def print2d(arr):
@@ -295,24 +276,66 @@ def conditions(self,row,col,count,check,check_):
 	return True,count,check,check_
 
 
-column=None ; row=None
 
+
+
+
+
+window = pg.pygame.display.set_mode(*pg.windowSize)
+
+	
+column=None
 last_level=0
 turn = 0
 stop_turn=5
 stop=0
 
-game_finished = True
+game_finished = False
 
+game_board = [['-' for i in range(3)]for j in range(3)]
+
+
+
+state_turn=1
+state_difficulty = 1
+start=1
+print(pg.windowSize)
+print(pg.space)
+print(pg.cell_hor)
+print(pg.cell_ver)
+
+
+print(pg.len_rect,pg.width_rect)
 
 
 process = open('Process.txt','w')
 
 
 
-change_turn = 0 if state_turn is 1 else 1
+while start==1:
+	pg.game_board(window,0,0,-1)	
+	
+	b=pg.click_on_difficulty(window,100,300,state_difficulty,state_turn,start)
+	if b!=None:
+		state_difficulty=b[0]
+		state_turn = b[1]
+		start=b[2]
+		print(b)
 
 	
+
+	
+
+	for event in pg.GAME_EVENTS.get():
+		if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
+			pg.pygame.quit()
+			sys.exit()
+	
+	pg.pygame.display.update()
+
+window.fill((0,0,0))
+
+change_turn = 0 if state_turn is 1 else 1
 
 while not game_finished:
 	
@@ -359,6 +382,7 @@ while not game_finished:
 
 		if tree.leaves[index_max].status==1:
 			print("you lose")
+			pg.show_result(window,'You Loss',(255,0,0))
 			process.close()
 			game_finished = True
 			break
@@ -388,7 +412,7 @@ while not game_finished:
 	else:
 		
 		column=None
-
+		pg.game_board(window,1,1,-1)
 		while column==None:
 
 			a = pg.click_on_cell(window)
@@ -411,6 +435,7 @@ while not game_finished:
 
 		if tree.leaves[column].status == -1:
 			print('you win')
+			#pg.show_result(window,'You Win',(0,255,0))
 			process.close()
 			game_finished = True
 			break
