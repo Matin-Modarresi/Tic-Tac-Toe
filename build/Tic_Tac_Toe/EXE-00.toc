@@ -1,0 +1,456 @@
+('E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\dist\\Tic_Tac_Toe.exe',
+ True,
+ False,
+ False,
+ 'C:\\Program Files (x86)\\Microsoft Visual '
+ 'Studio\\Shared\\Python37_64\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
+ None,
+ False,
+ False,
+ '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1"><assemblyIdentity name="Tic_Tac_Toe" processorArchitecture="amd64" type="win32" version="1.0.0.0"/><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"/></requestedPrivileges></security></trustInfo><dependency><dependentAssembly><assemblyIdentity language="*" name="Microsoft.Windows.Common-Controls" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" type="win32" version="6.0.0.0"/><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"/></dependentAssembly></dependency><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"><application><supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/><supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/><supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/><supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/><supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/></application></compatibility><application xmlns="urn:schemas-microsoft-com:asm.v3"><windowsSettings><longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware></windowsSettings></application></assembly>',
+ True,
+ True,
+ None,
+ None,
+ None,
+ 'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\Tic_Tac_Toe.pkg',
+ [('PYZ-00.pyz',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\localpycos\\struct.pyo',
+   'PYMODULE'),
+  ('pyimod01_os_path',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\localpycos\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\localpycos\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\localpycos\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyimod04_ctypes',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\localpycos\\pyimod04_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('Tic_Tac_Toe',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic_Tac_Toe.py',
+   'PYSOURCE'),
+  ('python37.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\python37.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('libopenblas.XWYDX2IKJW2NMTWSFYNGFUWKQU3LYTCZ.gfortran-win_amd64.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\.libs\\libopenblas.XWYDX2IKJW2NMTWSFYNGFUWKQU3LYTCZ.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('_hashlib',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_ctypes',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('select',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_socket',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_lzma',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_ssl',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('unicodedata',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('pyexpat',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('pygame.event',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\event.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.color',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\color.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.rect',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\rect.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.constants',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\constants.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_tests',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\core\\_multiarray_tests.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_umath',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\core\\_multiarray_umath.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg.lapack_lite',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\linalg\\lapack_lite.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.mtrand',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\mtrand.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._sfc64',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_sfc64.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._philox',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_philox.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._pcg64',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_pcg64.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._mt19937',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_mt19937.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.bit_generator',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\bit_generator.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._generator',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_generator.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._bounded_integers',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_bounded_integers.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._common',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\random\\_common.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.fft._pocketfft_internal',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\fft\\_pocketfft_internal.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg._umath_linalg',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.imageext',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\imageext.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.fastevent',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\fastevent.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.scrap',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\scrap.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.mixer',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\mixer.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.mixer_music',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\mixer_music.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('pygame.font',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\font.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame._freetype',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\_freetype.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.transform',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\transform.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.time',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\time.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.pixelarray',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\pixelarray.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.mask',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\mask.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.surface',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\surface.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.pixelcopy',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\pixelcopy.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('_queue',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('pygame.mouse',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\mouse.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.key',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\key.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.joystick',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\joystick.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.image',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\image.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.draw',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\draw.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.display',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\display.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.math',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\math.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.bufferproxy',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\bufferproxy.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.surflock',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\surflock.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.rwobject',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\rwobject.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('pygame.base',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\base.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('libcrypto-1_1.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('SDL2.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\SDL2.dll',
+   'BINARY'),
+  ('SDL2_image.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\SDL2_image.dll',
+   'BINARY'),
+  ('libpng16-16.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\libpng16-16.dll',
+   'BINARY'),
+  ('libjpeg-9.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\libjpeg-9.dll',
+   'BINARY'),
+  ('SDL2_mixer.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\SDL2_mixer.dll',
+   'BINARY'),
+  ('SDL2_ttf.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\SDL2_ttf.dll',
+   'BINARY'),
+  ('libfreetype-6.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\libfreetype-6.dll',
+   'BINARY'),
+  ('zlib1.dll',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\pygame\\zlib1.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'E:\\MATIN\\Python\\Tic-Tac-Toe\\Tic-Tac-Toe\\build\\Tic_Tac_Toe\\base_library.zip',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\WHEEL',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\INSTALLER',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\entry_points.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\REQUESTED',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\REQUESTED',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\METADATA',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\top_level.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\zip-safe',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\zip-safe',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\RECORD',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\RECORD',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\entry_points.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\COPYING.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\COPYING.txt',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\INSTALLER',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\INSTALLER',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\INSTALLER',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\INSTALLER',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\LICENSE',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\LICENSE',
+   'DATA'),
+  ('pip-21.3.dist-info\\REQUESTED',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\REQUESTED',
+   'DATA'),
+  ('pip-21.3.dist-info\\entry_points.txt',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pip-21.3.dist-info\\INSTALLER',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\RECORD',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\METADATA',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\METADATA',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\WHEEL',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\WHEEL',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\METADATA',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\WHEEL',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\WHEEL',
+   'DATA'),
+  ('pip-21.3.dist-info\\RECORD',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\zip-safe',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\zip-safe',
+   'DATA'),
+  ('pip-21.3.dist-info\\LICENSE.txt',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\dependency_links.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\dependency_links.txt',
+   'DATA'),
+  ('pip-21.3.dist-info\\WHEEL',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\WHEEL',
+   'DATA'),
+  ('pip-21.3.dist-info\\top_level.txt',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\top_level.txt',
+   'DATA'),
+  ('setuptools-47.1.0.dist-info\\LICENSE',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\setuptools-47.1.0.dist-info\\LICENSE',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\top_level.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\top_level.txt',
+   'DATA'),
+  ('pip-21.3.dist-info\\METADATA',
+   'c:\\users\\matin '
+   'modarresi\\appdata\\roaming\\python\\python37\\site-packages\\pip-21.3.dist-info\\METADATA',
+   'DATA'),
+  ('pyinstaller-4.7.dist-info\\RECORD',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\pyinstaller-4.7.dist-info\\RECORD',
+   'DATA'),
+  ('altgraph-0.17.dist-info\\top_level.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python37_64\\lib\\site-packages\\altgraph-0.17.dist-info\\top_level.txt',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1639849849,
+ [('run.exe',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
+   'EXECUTABLE')])

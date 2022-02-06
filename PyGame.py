@@ -20,7 +20,7 @@ mid_length_ver = (windowSize[0][1]-length)/2
 mid_width_ver = (windowSize[0][0]-width)/2
 
 
-cell= [[None for i in range(3)]for j in range(3)]
+#cell= [[None for i in range(3)]for j in range(3)]
 cell_hor=[];cell_ver=[]
 
 for line,i in zip(range(-3,4,2),range(4)):
@@ -33,7 +33,7 @@ for line,i in zip(range(-3,4,2),range(4)):
 def game_board(win,row,col,shape):
 	global windowSize,length,width,mid_length,mid_width
 
-	for i in range(4):
+	for i in range(1,3):
 		pygame.draw.rect(win,(9,234,150),(mid_length_hor,cell_hor[i],length,width))
 		pygame.draw.rect(win,(9,234,150),(cell_ver[i],mid_length_ver,width,length))
 
@@ -41,9 +41,9 @@ def game_board(win,row,col,shape):
 		radius = 60
 		pygame.draw.circle(win,(255,255,255),(cell_ver[col]+space,cell_hor[row]+space),radius,10)
 	if shape==0:
-		length=30
-		pygame.draw.line(win,(255,255,255),(cell_ver[col]+length,cell_hor[row]+length),(cell_ver[col+1]-length,cell_hor[row+1]-length),15)
-		pygame.draw.line(win,(255,255,255),(cell_ver[col]+length,cell_hor[row+1]-length),(cell_ver[col+1]-length,cell_hor[row]+length),15)
+		len_line=30
+		pygame.draw.line(win,(255,255,255),(cell_ver[col]+len_line,cell_hor[row]+len_line),(cell_ver[col+1]-len_line,cell_hor[row+1]-len_line),15)
+		pygame.draw.line(win,(255,255,255),(cell_ver[col]+len_line,cell_hor[row+1]-len_line),(cell_ver[col+1]-len_line,cell_hor[row]+len_line),15)
 
 
 
@@ -69,9 +69,9 @@ def click_on_difficulty(win,x,y,state_diff,state_turn,start):
 	basicFont = pygame.font.SysFont("Times New Roman", 40)
 	
 	if state_diff==1:
-		text_diff = basicFont.render('Hard', True,(255,0,0))
+		text_diff = basicFont.render(' Hard', True,(255,0,0))
 	else:
-		text_diff = basicFont.render('Easy', True,(255,0,0))
+		text_diff = basicFont.render(' Easy', True,(255,0,0))
 
 
 	if state_turn==1:
@@ -79,7 +79,7 @@ def click_on_difficulty(win,x,y,state_diff,state_turn,start):
 	else:
 		text_turn = basicFont.render('Turn 1', True,(255,0,0))
 
-	text_start = basicFont.render('Start', True,(255,255,255))
+	text_start = basicFont.render(' Start', True,(255,255,255))
 
 	button_diff = pygame.draw.rect(win,(255,255,255),(x,y,len_rect,width_rect),border_radius=5)
 	button_turn = pygame.draw.rect(win,(255,255,255),(x,y+100,len_rect,width_rect),border_radius=5)

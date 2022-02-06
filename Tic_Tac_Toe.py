@@ -284,21 +284,7 @@ def conditions(self,row,col,count,check,check_):
 window = pg.pygame.display.set_mode(*pg.windowSize)
 
 	
-column=None
-last_level=0
-turn = 0
-stop_turn=5
-stop=0
 
-game_finished = False
-
-game_board = [['-' for i in range(3)]for j in range(3)]
-
-
-
-state_turn=1
-state_difficulty = 1
-start=1
 print(pg.windowSize)
 print(pg.space)
 print(pg.cell_hor)
@@ -306,151 +292,171 @@ print(pg.cell_ver)
 
 
 print(pg.len_rect,pg.width_rect)
-
+pg.game_board(window,0,0,-1)
 
 process = open('Process.txt','w')
 
-
-
-while start==1:
-	pg.game_board(window,0,0,-1)	
+while 1:
+	print(pg.length,'\n',pg.width)
+	pg.length=500
+	column=None
+	last_level=0
+	turn = 0
+	stop_turn=5
+	stop=0
 	
-	b=pg.click_on_difficulty(window,100,300,state_difficulty,state_turn,start)
-	if b!=None:
-		state_difficulty=b[0]
-		state_turn = b[1]
-		start=b[2]
-		print(b)
-
+	game_finished = False
 	
-
+	game_board = [['-' for i in range(3)]for j in range(3)]
+	pg.selected_cell=[]
 	
-
-	for event in pg.GAME_EVENTS.get():
-		if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
-			pg.pygame.quit()
-			sys.exit()
 	
-	pg.pygame.display.update()
+	state_turn=1
+	state_difficulty = 1
+	start=1
 
-window.fill((0,0,0))
-
-change_turn = 0 if state_turn is 1 else 1
-
-while not game_finished:
-	
-	tree=Node(game_board)
-	MAX(tree,turn)
-
-
-	if turn%2==change_turn:	
-		maximum=-1000000*state_difficulty
-		
-		for i,index in zip(tree.leaves,range(len(tree.leaves))):
-			if i.value*state_difficulty>maximum*state_difficulty:
-				maximum=i.value
-				index_max=index
-
-
-		pg.selected_cell.append((tree.leaves[index_max].row,tree.leaves[index_max].col))
-		pg.game_board(window,tree.leaves[index_max].row,tree.leaves[index_max].col,0)
-		pg.pygame.display.update()
-
-
-		process = open('Process.txt','a',buffering=1)
-		
-		process.write('index_max '+str(index_max)+'\n')
-		process.write(str(tree.leaves[index_max].row)+ ' ' +str(tree.leaves[index_max].col)+'\n')
-
-	
-
-		process.write('\n')
-
-		for i in tree.leaves[index_max].map:
-			for j in i:
-				process.write(str(j)+' ')
-			process.write('\n')
-
-		process.write('\n')
-		
-		print()
-		print(index_max)
-		
-		print(tree.leaves[index_max].row,tree.leaves[index_max].col)
-		
-		print2d(tree.leaves[index_max].map)
-
-		if tree.leaves[index_max].status==1:
-			print("you lose")
-			pg.show_result(window,'You Loss',(255,0,0))
-			process.close()
-			game_finished = True
-			break
-
-		if tree.status==0 and len(tree.leaves)==1:
-			print('draw')
-			game_finished=True
-			break
-
-		print()
-		process.write('\n')
-
-		tree.printTree_bfs(process)
-		
-		print()
-
-		process.write('\n')
-
-		tree.leaves[index_max].printTree_bfs(process)
-
-		process.write('\n'+'#'*165+'\n')
-
-		print()
-		
-		tree=tree.leaves[index_max]
-
-	else:
-		
-		column=None
-		pg.game_board(window,1,1,-1)
-		while column==None:
-
-			a = pg.click_on_cell(window)
-			if a is not None:
-				print(a)
-				pg.game_board(window,a[0] ,a[1],1)
-
-				for i,index in zip(tree.leaves , range(len(tree.leaves))):
-					if i.row==a[0] and i.col==a[1]:
-						column = index
+	while start==1:
 			
-			for event in pg.GAME_EVENTS.get():
-				if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
-					pg.pygame.quit()
-					sys.exit()
-
-			pg.pygame.display.update()
-
-		os.system('cls')
-
-		if tree.leaves[column].status == -1:
-			print('you win')
-			#pg.show_result(window,'You Win',(0,255,0))
-			process.close()
-			game_finished = True
-			break
-
-		if tree.status==0 and len(tree.leaves)==1:
-			print('draw')
-			game_finished=True
-			break
-			#esm.send_email('Process.txt','Process.txt',0)
-
-
-		tree=tree.leaves[column]		
-
-	game_board=copy.deepcopy(tree.map)
-	turn+=1
-
-	stop_turn=5+turn
+		
+		b=pg.click_on_difficulty(window,100,300,state_difficulty,state_turn,start)
+		if b!=None:
+			state_difficulty=b[0]
+			state_turn = b[1]
+			start=b[2]
+			print(b)
 	
+		
+	
+		
+	
+		for event in pg.GAME_EVENTS.get():
+			if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
+				pg.pygame.quit()
+				sys.exit()
+			
+		pg.pygame.display.update()
+	
+	window.fill((0,0,0))
+
+	change_turn = 0 if state_turn is 1 else 1
+	
+	while not game_finished:
+		
+		tree=Node(game_board)
+		MAX(tree,turn)
+	
+	
+		if turn%2==change_turn:	
+			maximum=-1000000*state_difficulty
+			
+			for i,index in zip(tree.leaves,range(len(tree.leaves))):
+				if i.value*state_difficulty>maximum*state_difficulty:
+					maximum=i.value
+					index_max=index
+	
+	
+			pg.selected_cell.append((tree.leaves[index_max].row,tree.leaves[index_max].col))
+			pg.game_board(window,tree.leaves[index_max].row,tree.leaves[index_max].col,0)
+			pg.pygame.display.update()
+	
+	
+			process = open('Process.txt','a',buffering=1)
+			
+			process.write('index_max '+str(index_max)+'\n')
+			process.write(str(tree.leaves[index_max].row)+ ' ' +str(tree.leaves[index_max].col)+'\n')
+	
+		
+	
+			process.write('\n')
+	
+			for i in tree.leaves[index_max].map:
+				for j in i:
+					process.write(str(j)+' ')
+				process.write('\n')
+	
+			process.write('\n')
+			
+			print()
+			print(index_max)
+			
+			print(tree.leaves[index_max].row,tree.leaves[index_max].col)
+			
+			print2d(tree.leaves[index_max].map)
+	
+			if tree.leaves[index_max].status==1:
+				print("you lose")
+				pg.show_result(window,'You Loss',(255,0,0))
+				process.close()
+				game_finished = True
+				break
+	
+			if tree.status==0 and len(tree.leaves)==1:
+				print('draw')
+				pg.show_result(window,'  Draw  ',(0,0,255))
+				game_finished=True
+				break
+	
+			print()
+			process.write('\n')
+	
+			tree.printTree_bfs(process)
+			
+			print()
+	
+			process.write('\n')
+	
+			tree.leaves[index_max].printTree_bfs(process)
+	
+			process.write('\n'+'#'*165+'\n')
+	
+			print()
+			
+			tree=tree.leaves[index_max]
+	
+		else:
+			
+			column=None
+			pg.game_board(window,1,1,-1)
+			while column==None:
+	
+				a = pg.click_on_cell(window)
+				if a is not None:
+					print(a)
+					pg.game_board(window,a[0] ,a[1],1)
+	
+					for i,index in zip(tree.leaves , range(len(tree.leaves))):
+						if i.row==a[0] and i.col==a[1]:
+							column = index
+				
+				for event in pg.GAME_EVENTS.get():
+					if event.type == pg.pygame.KEYDOWN and event.key == pg.pygame.K_ESCAPE:
+						pg.pygame.quit()
+						sys.exit()
+	
+				pg.pygame.display.update()
+	
+			os.system('cls')
+	
+			if tree.leaves[column].status == -1:
+				print('you win')
+				pg.show_result(window,'You Win',(0,255,0))
+				process.close()
+				game_finished = True
+				break
+	
+			if tree.status==0 and len(tree.leaves)==1:
+				pg.show_result(window,'  Draw  ',(0,0,255))
+				game_finished=True
+				break
+				#esm.send_email('Process.txt','Process.txt',0)
+	
+	
+			tree=tree.leaves[column]		
+	
+		game_board=copy.deepcopy(tree.map)
+		turn+=1
+	
+		stop_turn=5+turn
+
+	
+		
